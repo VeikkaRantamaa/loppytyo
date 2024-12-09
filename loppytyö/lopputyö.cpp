@@ -6,7 +6,7 @@
 #include <string>
 #include <locale>
 using namespace std;
-
+//Veikka Rantamaa lopputyö 4
 struct Varaus {
     int varausNumero;
     string varaajanNimi;
@@ -29,7 +29,7 @@ int arvoVarausNumero() {
 }
 
 bool onkoVarattu(const vector<bool>& varatutHuoneet, int huoneNumero) {
-    return varatutHuoneet[huoneNumero - 1];
+    return varatutHuoneet[huoneNumero - 1]; //tarkistetaan, että onko huone varattu
 }
 
 void varaaHuone(vector<bool>& varatutHuoneet, int hinta, int alennus, ofstream& tiedosto, vector<Varaus>& varaukset) {
@@ -137,7 +137,7 @@ int main() {
             haeVaraajanNimella(varaukset, varaajanNimi);
         }
         else {
-            cout << "Virheellinen hakutapa." << endl;
+            cout << "Virheellinen hakutapa." << endl;// tarkistetaan, että onko syöte oikein
         }
     }
 
